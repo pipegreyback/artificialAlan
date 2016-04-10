@@ -24,6 +24,7 @@ import src
 
 class ConnectionIndicator(
         src.boiler_ui_module.BoilerUIModule):
+    classes = {'system'}
     conf = {
         'static_url_prefix': '/conn-ind/',
         'static_path': './notifications/'

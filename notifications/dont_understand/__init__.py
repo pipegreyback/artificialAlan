@@ -32,6 +32,7 @@ DURATION = 1 * 60
 
 class DontUnderstandIndicator(
         src.boiler_ui_module.BoilerUIModule):
+    classes = {'teacher', 'student'}
     conf = {
         'static_url_prefix': '/dont_understand/',
         'static_path': './notifications/'

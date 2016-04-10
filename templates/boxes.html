@@ -11,6 +11,8 @@
 
     {% from notifications import boiler_ui_modules as \
        notifications %}
+    {% set notifications = filter_classes(notifications, classes) %}
+
 
     <button type="button" id="main-menu-button">
         <img src="{{ static_url('images/main-menu.svg') }}">
